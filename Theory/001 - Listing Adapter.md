@@ -5,19 +5,19 @@
 - <sys/socket.h>
 
 ### Requried Functions : 
-```
+```c
 int getifaddrs(struct ifaddrs **ifap);
 ``` 
 Here *`ifap`* is a pointer to a linked list of data type struct ifaddrs.
 Here the link list contains the network interfaces on the system.
 The function returns **0** on **success** and **-1** on **error**.
 
-```
+```c
 void freeifaddrs(struct ifaddrs *ifa);
 ```
 The data returned by getifaddrs() is freed by calling freeifaddrs().
 ### Structures Used :
-```
+```c
 //<sys/socket.h>
 	struct sockaddr {
 	sa_family_t sa_family; // Address family
@@ -37,7 +37,7 @@ struct in_addr{
 
 **sa_family** : AF_INET, AF_UNIX, AF_NS, AF_IMPLINK
 
-```
+```c
 //ifaddrs.h
 struct ifaddrs {
 	struct ifaddrs *ifa_next; // Pointer to the next interface in list.
