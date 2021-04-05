@@ -1,12 +1,10 @@
-Networking with C
-
 # Listing Adapters in Linux
-##### Required Libraries : 
+### Required Libraries : 
 - <netdb.h>
 - <ifaddrs.h>
 - <sys/socket.h>
 
-##### Requried Functions : 
+### Requried Functions : 
 ```
 int getifaddrs(struct ifaddrs **ifap);
 ``` 
@@ -18,7 +16,7 @@ The function returns **0** on **success** and **-1** on **error**.
 void freeifaddrs(struct ifaddrs *ifa);
 ```
 The data returned by getifaddrs() is freed by calling freeifaddrs().
-##### Structures Used :
+### Structures Used :
 ```
 //<sys/socket.h>
 	struct sockaddr {
