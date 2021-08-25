@@ -12,7 +12,7 @@
 First 14 bytes : DST + SRC + Length/Type
 Length/Type = **0x0806** for ARP
 
-![165bff35303a3bb97f6a43d9393ed9a5.png](../../_resources/efe2528196b6481ebb754adfbf16e06c.png)
+![arp.png](./arp.png)
 
 ## Tools to view ARP
 
